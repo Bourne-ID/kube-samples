@@ -13,7 +13,7 @@ RUN PATH=$GOPATH/bin:$PATH go build -o build/_output/bin/secret-sync-operator cm
 
 
 
-FROM alpine:3.10
+FROM ubuntu:18.04
 ENV OPERATOR=/usr/local/bin/secret-sync-operator \
     USER_UID=1001 \
     USER_NAME=secret-sync-operator
